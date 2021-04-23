@@ -4,7 +4,9 @@ target/
 HELP.md
 .gradle
 build/
-!gradle/wrapper/gradle-wrapper.jar
+gradlew
+gradlew.bat
+gradle/*
 !**/src/main/**/build/
 !**/src/test/**/build/
 
