@@ -10,14 +10,14 @@ import com.navneet.executor.models.UploadResponse;
 public interface UploadService {
 
     /**
-     * This method uploads CSV and process the request in multithreaded executor
+     * This method uploads CSV and processes the request in multithreaded executor
      * @param request
      * @return
      */
     UploadResponse uploadCsvMultiThreaded(UploadRequest request);
 
     /**
-     * This method uploads CSV and process the request in single thread
+     * This method uploads CSV and processes the request in single thread
      * @param request
      * @return
      */
@@ -36,6 +36,13 @@ public interface UploadService {
      * @return
      */
     TaskStatus checkUploadTaskStatus(String taskId);
+
+    /**
+     * This method uploads CSV and processes the request with ThreadPoolTaskExecutor
+     * @param request
+     * @return
+     */
+    UploadResponse uploadCsvMultiThreadedWithThreadPoolExecutor(UploadRequest request);
 
 
 }
