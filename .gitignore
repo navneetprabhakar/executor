@@ -40,3 +40,18 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# >>> ExecuteSpec — added missing vendored-path ignores at clone time (see VendoredPathGuard)
+node_modules/
+venv/
+.venv/
+__pycache__/
+.next/
+coverage/
+bower_components/
+vendor/
+.pytest_cache/
+.mypy_cache/
+.tox/
+.nyc_output/
+# <<< ExecuteSpec
